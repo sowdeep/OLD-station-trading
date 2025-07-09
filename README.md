@@ -11,3 +11,11 @@ It adds a 'Day_of_Year' column to the DataFrame.
 It calculates the mean of all data columns (excluding 'Day_of_Year') and appends this as a "Mean" row to the DataFrame.
 Output: The processed data for the target year, including the 'Mean' row, is saved to an Excel file named processed_climate_data_[year].xlsx in the base directory.
 Error Handling: The script includes checks for invalid user input (e.g., non-positive station count, non-integer year), missing base or station directories, and issues during file reading or data extraction.
+
+
+
+cd C:\Users\YourUsername\Desktop\ClimateApp
+python -m venv venv
+.\venv\Scripts\activate
+pip install pandas tabulate openpyxl
+python climate_data_app.py
